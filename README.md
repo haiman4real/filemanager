@@ -1,6 +1,6 @@
 # File Manager by Emmanuel Ogunwobi
 
-Welcome to the File Manager package for the Mobile Bookings project. This package provides functionalities to manage files within the application.
+Welcome to the File Manager package for the Laravel project. This package provides functionalities to manage files within the application.
 
 ## Features
 
