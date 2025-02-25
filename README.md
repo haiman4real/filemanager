@@ -17,6 +17,10 @@ To install the package, run:
 composer require emmaogunwobi/filemanager
 ```
 
+```bash
+php artisan vendor:publish --provider="Emmaogunwobi\FileManager\FileManagerServiceProvider" --tag=config
+```
+
 ## Usage
 
 Import the package and use the provided methods to manage files:

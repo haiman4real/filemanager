@@ -15,14 +15,14 @@ class FileManagerServiceProvider extends ServiceProvider
     {
         // Publish config files
         $this->publishes([
-            __DIR__ . '/../config/filemanager.php' => config_path('filemanager.php'),
+            __DIR__ . '/../src/config/filemanager.php' => config_path('filemanager.php'),
         ], 'config');
 
         // Load routes
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
 
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../src/database/migrations');
 
         // Load translations
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'filemanager');
