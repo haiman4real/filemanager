@@ -21,25 +21,15 @@ composer require emmaogunwobi/filemanager
 php artisan vendor:publish --provider="Emmaogunwobi\FileManager\FileManagerServiceProvider" --tag=config
 ```
 
+```bash
+php artisan migrate
+```
+
 ## Usage
 
-Import the package and use the provided methods to manage files:
+Import the package and use the provided methods to manage files
 
-```javascript
-const fileManager = require('@mobile-bookings/filemanager');
 
-// Upload a file
-fileManager.upload(file);
-
-// Download a file
-fileManager.download(fileId);
-
-// Delete a file
-fileManager.delete(fileId);
-
-// List all files
-fileManager.list();
-```
 
 ## Contributing
 
