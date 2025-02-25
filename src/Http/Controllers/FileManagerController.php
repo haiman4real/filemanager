@@ -5,7 +5,7 @@ namespace Emmaogunwobi\FileManager\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
-use emmaogunwobi\FileManager\Models\FileManager;
+use Emmaogunwobi\FileManager\Models\FileManager;
 
 class FileManagerController extends Controller
 {
