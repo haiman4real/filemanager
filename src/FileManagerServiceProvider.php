@@ -1,6 +1,6 @@
 <?php
 
-namespace emmaogunwobi\FileManager;
+namespace Emmaogunwobi\FileManager;
 
 use Illuminate\Support\ServiceProvider;
 

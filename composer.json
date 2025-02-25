@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "emmaogunwobi\\FileManager\\": "src/"
+            "Emmaogunwobi\\FileManager\\": "src/"
         }
     },
     "authors": [
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "emmaogunwobi\\FileManager\\FileManagerServiceProvider"
+                "Emmaogunwobi\\FileManager\\FileManagerServiceProvider"
             ]
         }
     },

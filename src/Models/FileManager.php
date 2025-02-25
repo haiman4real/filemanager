@@ -1,6 +1,6 @@
 <?php
 
-namespace emmaogunwobi\FileManager\Models;
+namespace Emmaogunwobi\FileManager\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

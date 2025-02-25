@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use emmaogunwobi\FileManager\Http\Controllers\FileManagerController;
+use Emmaogunwobi\FileManager\Http\Controllers\FileManagerController;
 
 
 Route::post('/filemanager/upload', [FileManagerController::class, 'upload'])->name('filemanager.upload');
