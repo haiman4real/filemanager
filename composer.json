@@ -1,0 +1,36 @@
+{
+    "name": "emmaogunwobi/filemanager",
+    "description": "A file upload and management package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^10.0 || ^11.0",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "emmaogunwobi\\FileManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuel Ogunwobi",
+            "email": "haiman4real@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "emmaogunwobi\\FileManager\\FileManagerServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/emmaogunwobi/filemanager"
+        }
+    ],
+     "minimum-stability": "stable"
+}
