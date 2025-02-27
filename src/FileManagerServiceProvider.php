@@ -3,12 +3,22 @@
 namespace Emmaogunwobi\FileManager;
 
 use Illuminate\Support\ServiceProvider;
+use Emmaogunwobi\FileManager\Services\FileManagerService;
 
 class FileManagerServiceProvider extends ServiceProvider
 {
     public function register()
     {
         // Register package services
+        
+        $this->mergeConfigFrom(__DIR__ . '/../config/filemanager.php', 'filemanager');
+
+        // Bind the file manager service to the container
+        $this->app->singleton('filemanager', function ($app) {
+            return new FileManagerService();
+        });
+        
+    
     }
 
     public function boot()
