@@ -11,7 +11,7 @@ class FileManagerServiceProvider extends ServiceProvider
     {
         // Register package services
         
-        $this->mergeConfigFrom(__DIR__ . '/../config/filemanager.php', 'filemanager');
+        $this->mergeConfigFrom(__DIR__ . '/../src/config/filemanager.php', 'filemanager');
 
         // Bind the file manager service to the container
         $this->app->singleton('filemanager', function ($app) {
