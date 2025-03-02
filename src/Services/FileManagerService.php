@@ -49,7 +49,7 @@ class FileManagerService
     {
         $file = FileManager::find($fileId);
         if (!$file) {
-            throw new \Exception("File not found");
+            throw new Exception("File not found");
         }
 
         Storage::disk(config('filemanager.disk'))->delete($file->file_path);
@@ -61,4 +61,25 @@ class FileManagerService
     }
 
     // Add other methods as needed
+    /**
+     * Return a response that streams the file to the user.
+     *
+     * @param int $fileId
+     * @return \Symfony\Component\HttpFoundation\StreamedResponse
+     * @throws \Exception
+     */
+    public function viewFile($fileId)
+    {
+        // Retrieve the file record from the database
+        $file = FileManager::find($fileId);
+        if (!$file) {
+            throw new Exception("File not found");
+        }
+
+        return Storage::disk(config('filemanager.disk'))->response(
+            $file->file_path,
+            $file->file_name,
+            ['Content-Type' => $file->mime_type]
+        );
+    }
 }
